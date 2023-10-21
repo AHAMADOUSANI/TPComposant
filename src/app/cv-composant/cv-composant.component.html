@@ -1,0 +1,12 @@
+<hr>
+Nom:{{nom}}<br>
+Age:{{age}}<br>
+Adresse:{{adresse}}<br>
+//property binding
+<input #name
+[value]="getName()">
+event binding
+<button
+(click)="modifier(name.value)">Modifier le nom</button>
+<hr> 
+
