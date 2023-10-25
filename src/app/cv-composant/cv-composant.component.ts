@@ -1,18 +1,24 @@
 import { Component } from '@angular/core';
-
 @Component({
   selector: 'app-cv-composant',
   templateUrl: './cv-composant.component.html',
   styleUrls: ['./cv-composant.component.css']
 })
 export class CVComposantComponent {
-  nom:String ='Ahmed sani';
-  age:number=20;
-  adresse: String="sousse";
-  getName(){
-    return this.nom;
+  Nom:string ='';
+  Prenom:string='';
+  Age:number=0;
+ // adresse: String="sousse";
+ // getName(){
+   // return this.Nom;
+ // }
+ // modifier( newName: string){
+   // this.Nom=newName;
+ // }
+  envoyerDonnees(){
+    
   }
-  modifier( newName: string){
-    this.nom=newName;
+  constructor(){
+
   }
 }

@@ -1,12 +1,22 @@
-<hr>
-Nom:{{nom}}<br>
-Age:{{age}}<br>
-Adresse:{{adresse}}<br>
-//property binding
-<input #name
-[value]="getName()">
-event binding
-<button
-(click)="modifier(name.value)">Modifier le nom</button>
-<hr> 
+
+
+
+
+    <div class="row mt-3">
+        <div class="card col-md-6 mt-3 mr-5" style="background-color: aqua;">
+<form (ngSubmit)="envoyerDonnees()">
+    <table>
+        <tr><td>Nom</td><td><input type="text" [(ngModel)]="Nom" name="Nom" placeholder="Entrer votre Nom" required></td></tr>
+        <tr><td>Prenom</td><td><input type="text" [(ngModel)]="Prenom" name="Prenom" placeholder="Entrer votre Prenom" required></td></tr>
+        <tr><td>Age</td><td><input type="number" [(ngModel)]="Age" name="Age" placeholder="Entrer votre age" required></td></tr>
+      
+<tr><td></td><td><button class="btn btn-warning text-rigth">Envoyer</button></td></tr>
+    </table>
+</form>
+</div>
+<div class="card col-md-6 mt-3 ml-2" style="background-color: aqua;">
+    <app-detail-composant></app-detail-composant>
+</div>
+    </div>
+
 
